@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //değişkenleri belirle
+        int r,aci;
+        double pi=3.14;
+
+         Scanner deger=new Scanner(System.in);
+
+        //kullanıcıdan veri al
+
+         System.out.print("Dairenin Yarıçapını giriniz ");
+         r=deger.nextInt();
+         System.out.print("Merkez Açısını Giriniz ");
+         aci=deger.nextInt();
+
+         // hesaplamaları düzenle
+         double cevre=2*pi*r;
+         double alan=(pi*(r*r)*aci)/360;
+
+         //çıktılarımız
+         System.out.println("Dairenin çevresi "+ cevre);
+         System.out.println("Dairenin alanı "+ alan);
+
+    }
+}
+
+//ödevde verilen alan formülü alan hesaplamasının yanlış yapıyor dikkat
